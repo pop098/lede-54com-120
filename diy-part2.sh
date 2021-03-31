@@ -29,7 +29,6 @@ sed -i "s/OpenWrt /Sunny $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean
 cd openwrt
 rm -rf package/lean/luci-theme-argon  #删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
 
-
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon  #argon-主题
 #全新的[argon-主题]登录界面,图片背景跟随Bing.com，每天自动切换
 #增加可自定义登录背景功能，请自行将文件上传到/www/luci-static/argon/background 目录下，支持jpg png gif格式图片，主题将会优先显示自定义背景，多个背景为随机显示，系统默认依然为从bing获取
